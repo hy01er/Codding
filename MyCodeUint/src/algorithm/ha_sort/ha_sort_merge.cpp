@@ -9,6 +9,9 @@
 
 static void HaMerge(int *arr, int p, int q, int r)
 {
+    if (arr == NULL) {
+        return;
+    }
     int n1 = q - p + 1;
     int n2 = r - q;
     int b[n1 + 1];
@@ -17,15 +20,13 @@ static void HaMerge(int *arr, int p, int q, int r)
     int cIndex = 0;
     for (int i = p; i <= r; i++) {
         if (i <= q) {
-            b[bIndex] = arr[i];
-            bIndex++;
+            b[bIndex++] = arr[i];
         } else {
-            c[cIndex] = arr[i];
-            cIndex++;
+            c[cIndex++] = arr[i];
         }
     }
     b[n1] = INT32_MAX;
-    b[n2] = INT32_MAX;
+    c[n2] = INT32_MAX;
     bIndex = 0;
     cIndex = 0;
     for (int i = p; i <= r; i++) {
@@ -37,14 +38,19 @@ static void HaMerge(int *arr, int p, int q, int r)
     }
 }
 
-BOOL HaSortMerge(int *arr, int p, int r)
+BOOL HaSortMergeHandle(int *arr, int p, int r)
 {
     if (arr == NULL || p >= r) {
         return false;
     }
     int q = (p +r) / 2;
-    HaSortMerge(arr, p, q);
-    HaSortMerge(arr, q + 1, r);
+    HaSortMergeHandle(arr, p, q);
+    HaSortMergeHandle(arr, q + 1, r);
     HaMerge(arr, p, q, r);
     return true;
+}
+
+BOOL HaSortMerge(int *arr, int nums)
+{
+    return HaSortMergeHandle(arr, 0, nums - 1);
 }

@@ -17,6 +17,6 @@ void Swap(int*, int*);
 BOOL HaSortBubble(int *arr,int nums);
 BOOL HaSortSelect(int *arr,int nums);
 BOOL HaSortInsert(int *arr,int nums);
-BOOL HaSortMerge(int *arr, int p, int r);
-BOOL HaSortQuick(int *arr, int p, int r);
+BOOL HaSortMerge(int *arr, int nums);
+BOOL HaSortQuick(int *arr, int nums);
 #endif //MYCODEUINT_HA_SORT_H

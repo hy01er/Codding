@@ -19,4 +19,6 @@ typedef short INT16;
 typedef unsigned short UINT16;
 typedef int BOOL;
 
+#define SIZE_ARRAY(a) ((sizeof(a)) / (sizeof(a[0])))
+
 #endif // _BASIC_TYPE_H_
