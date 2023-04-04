@@ -1,3 +1,3 @@
-D:/Users/Desktop/CLionProjects/MyCodeUint/cmake-build-debug/CMakeFiles/MyCodeUint.dir
-D:/Users/Desktop/CLionProjects/MyCodeUint/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Users/Desktop/CLionProjects/MyCodeUint/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/Users/Desktop/Codding/Codding/MyCodeUint/cmake-build-debug/CMakeFiles/MyCodeUint.dir
+D:/Users/Desktop/Codding/Codding/MyCodeUint/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Users/Desktop/Codding/Codding/MyCodeUint/cmake-build-debug/CMakeFiles/rebuild_cache.dir

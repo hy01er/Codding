@@ -17,6 +17,5 @@ int main()
     int b = SIMER;
     Swap(&a, &b);
     printf("\n%d %d", a, b);
-
     return 0;
 }
